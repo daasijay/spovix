@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+td.actionbtns {
+    button{
+        font-size: 14px;
+        cursor: pointer;
+        width: 2rem!important;
+    }
+    .p-button:enabled:hover {
+        background: none;
+        color: unset;
+        border-color: transparent;
+    }
+    span{
+        font-weight: 400;
+    }
+    button:nth-last-child(1){
+        margin-right: 0;
+    }
+    .editbtn button{
+        border: 0;
+        background: none;
+        color:#343434;
+    }
+    .delbtn button{
+        border: 0;
+        background: none;
+        color:#F00;
+    }
+    .viewbtn button{
+        border: 0;
+        background: none;
+        color:#3B82F6;
+    }
+}
+
+.confirmBoxWrap .p-dialog-footer.ng-tns-c49-1.ng-star-inserted {
+    text-align: center;
+}
+.confirmBoxWrap .p-dialog .p-dialog-footer button:focus{
+    outline: none;
+    box-shadow: none;
+}
+.confirmBoxWrap .p-dialog .p-dialog-footer button {
+    padding: 5px 15px;
+}
+.confirmBoxWrap .p-dialog .p-dialog-footer button span{
+    font-weight: 400;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+    padding-left: 2rem;
+
+    a {
+        flex-basis: 100%;
+        margin-bottom: 1.5rem;
+        font-size: 18px;
+        color: #303030;
+    }
+    a:hover {
+        color: #3369ff;
+    }
+    
+}
+.sidebar-nav ul .sidebar-item .sidebar-link.active, 
+.sidebar-nav ul .sidebar-item .sidebar-link.active:hover{
+    background: #3369ff!important;
+}
+

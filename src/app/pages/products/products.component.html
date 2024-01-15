@@ -1,0 +1,54 @@
+<div class="page-wrapper">
+    <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+                <h4 class="page-title">Products</h4>
+                <div class="ml-auto text-right">
+                    <a routerLink="/product-create" class="p-button font-bold">Add Product</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p-toast></p-toast>
+    <div class="flex flex-wrap justify-content-center gap-2 confirmBoxWrap">
+        <p-confirmDialog rejectButtonStyleClass="p-button-outlined"></p-confirmDialog>
+    </div>
+
+    <div class="container">
+            <p-table 
+            [value]="products" 
+            [paginator]="false"
+            [rows]="15"
+            [showCurrentPageReport]="false"
+            responsiveLayout="stack" 
+            styleClass="p-datatable-gridlines" 
+            [tableStyle]="{ 'min-width': '50rem', 'background' : '#ececed' }"
+            currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+            [rowsPerPageOptions]="[10, 30, 50]"
+            >
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Action</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-product let-rowIndex="rowIndex">
+                <tr>
+                    <td>{{ rowIndex+1}}</td>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.categoryId }}</td>
+                    <td>{{ product.description }}</td>
+                    <td class="actionbtns">
+                        <p-button icon="pi pi-eye" class="viewbtn" [routerLink]="['/product-details',product.id]"></p-button>
+                        <p-button icon="pi pi-file-edit" class="editbtn"></p-button>
+                        <p-button icon="pi pi-trash" class="delbtn" (click)="deleteProduct(product.id)"></p-button>
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="page-wrapper">
+    <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+                <h4 class="page-title" *ngIf="productDetails.name">Product ({{productDetails.name}})</h4>
+                <div class="ml-auto text-right">
+                    <a routerLink="/products" class="p-button font-bold">All Products</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <p-panel header="Product Details" *ngIf="productDetails">
+            <div class="product-item-info">
+                <p><strong>Product Name:</strong></p>
+                <p>{{productDetails.name}}</p>
+            </div>
+            <div class="product-item-info">
+                <p><strong>Product Category:</strong></p>
+                <p>{{productDetails.categoryId}}</p>
+            </div>
+            <div class="product-item-info">
+                <p><strong>Product Description:</strong></p>
+                <p>{{productDetails.description}}</p>
+            </div>
+        </p-panel>
+    </div>
+    
+
+</div>

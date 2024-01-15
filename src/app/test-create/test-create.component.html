@@ -1,0 +1,48 @@
+
+<div class="page-wrapper">
+    <div class="page-breadcrumb">
+       <div class="row">
+           <div class="col-12 d-flex no-block align-items-center">
+               <h4 class="page-title">Add Attribute</h4>
+               <!-- <div class="ml-auto text-right">
+                   <a routerLink="/attributes" class="p-button font-bold">All Attributes</a>
+               </div> -->
+           </div>
+       </div>
+   </div>
+
+   <div class="container">
+       <form [formGroup]="catCreateForm">
+           <div class="card flex justify-content-center">
+               <input placeholder="Category Name" type="text" pInputText formControlName="name"/>
+           </div>
+           <div class="card flex justify-content-center">
+               <input placeholder="Values" type="text" pInputText formControlName="values"/>
+           </div>
+
+           <!-- <p-treeSelect [(ngModel)]="selectedNode" [ngModelOptions]="{standalone: true}" [options]="nodes" selectionMode="single" placeholder="Select Item" [style]="{'width': '100%'}" containerStyleClass="w-full"></p-treeSelect> -->
+
+           <div class="card flex justify-content-center">
+             
+            <select pInputText>
+                <option value="{{node.data.id}}" *ngFor="let node of nodes">
+                    {{ node.data.name }}
+                </option>
+            </select>  
+            
+            
+            <select pInputText>
+                <option value="{{node.data.id}}" *ngFor="let node of nodes">
+                    {{ node.data.name }}
+                </option>
+            </select>    
+
+            </div>
+
+           <div class="ml-auto text-right">
+               <p-button label="Create" (click)="createCat()" ></p-button>
+           </div>
+       </form>
+   </div>
+
+</div>

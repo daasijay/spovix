@@ -1,0 +1,39 @@
+
+<div class="page-wrapper">
+     <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+                <h4 class="page-title">Add Product</h4>
+                <div class="ml-auto text-right">
+                    <a routerLink="/products" class="p-button font-bold">All Products</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <form [formGroup]="productCreateForm">
+            <div class="card flex justify-content-center">
+                <input placeholder="Product Name" type="text" pInputText formControlName="name"/>
+            </div>
+            <div class="card flex justify-content-center">
+                <input placeholder="Description" type="text" pInputText formControlName="description"/>
+            </div>
+            
+            <div class="card flex justify-content-center">
+             
+                <select formControlName="categoryId" pInputText>
+                    <option value="{{category.id}}" *ngFor="let category of categories">
+                        {{ category.name }}
+                    </option>
+                </select>    
+
+            </div>
+            
+            <div class="ml-auto text-right">
+                <p-button label="Save" (click)="createProduct()" ></p-button>
+            </div>
+        </form>
+    </div>
+
+</div>

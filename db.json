@@ -1,0 +1,258 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "products": [
+    {
+      "name": "www",
+      "description": "wwww",
+      "categoryId": 4,
+      "id": 9
+    },
+    {
+      "name": "dssdf",
+      "description": "dsfdfdf",
+      "categoryId": 4,
+      "id": 10
+    },
+    {
+      "name": "dssfewerewrdf",
+      "description": "dsdgdfgdfgffdfdf",
+      "categoryId": 3,
+      "id": 12
+    },
+    {
+      "name": "efhfhfhdhd",
+      "description": "dsfddgdgdfgdfdf",
+      "categoryId": 3,
+      "id": 13
+    },
+    {
+      "name": "dgddfgdfggdfg",
+      "description": "dfgdfgdfgdfgdfg",
+      "categoryId": 2,
+      "id": 14
+    },
+    {
+      "name": "dssdgfhgfhfghgff",
+      "description": "dsfdfhgfhgfhfdf",
+      "categoryId": 4,
+      "id": 16
+    },
+    {
+      "name": "dssdggdfgdfdf",
+      "description": "sfsdfdsd",
+      "categoryId": 3,
+      "id": 17
+    },
+    {
+      "name": "dssdgdfgdfgdfdf",
+      "description": "dsfddfgdfgfdfdf",
+      "categoryId": 2,
+      "id": 19
+    },
+    {
+      "name": "sdsdssdsdssdsdssssdsd",
+      "description": "dsfsdsdsdssgfhgfhgfhdfdf",
+      "categoryId": 3,
+      "id": 21
+    },
+    {
+      "name": "dssfghsdfdsdsfdgfhgfhdf",
+      "description": "dsfddsfdsfdssfdsfdsf",
+      "categoryId": 1,
+      "id": 20
+    },
+    {
+      "name": "dssfghsdfdsdsfdgfhgfhdf",
+      "description": "dsfddsfdsfdssfdsfdsf",
+      "categoryId": 2,
+      "id": 21
+    }
+  ],
+  "categories": [
+    {
+      "name": "Category 2",
+      "id": 2
+    },
+    {
+      "name": "Category 3",
+      "id": 3
+    },
+    {
+      "name": "Category 4",
+      "id": 4
+    }
+  ],
+  "attributes": [
+    {
+      "name": "Attribute 1",
+      "values": [
+        "sample1",
+        "sample2"
+      ],
+      "id": 2
+    },
+    {
+      "name": "Attribute 2",
+      "values": [
+        "sample3"
+      ],
+      "id": 3
+    },
+    {
+      "name": "Attribute 3",
+      "values": [
+        "sample2"
+      ],
+      "id": 4
+    }
+  ],
+  
+  "nodes": [
+    { 
+      "data":{  
+          "name":"Applications",
+          "type":"Folder"
+      },
+      "children":[  
+        {  
+          "data":{  
+              "name":"Angular",
+              "type":"Folder"
+          },
+            "children":[  
+              {  
+                  "data":{  
+                      "name":"angular.app",
+                      "type":"Application"
+                  }
+              },
+              {  
+                  "data":{  
+                      "name":"cli.app",
+                      "type":"Application"
+                  }
+              },
+              {  
+                  "data":{  
+                      "name":"mobile.app",
+                      "type":"Application"
+                  }
+              }
+            ]
+        },
+        {  
+          "data":{  
+              "name":"Google",
+              "type":"Folder"
+          },
+            "children":[  
+              {  
+                  "data":{  
+                      "name":"drive",
+                      "type":"G Drive"
+                  }
+              },
+              {  
+                  "data":{  
+                      "name":"map",
+                      "type":"Google Map"
+                  }
+              },
+              {  
+                  "data":{  
+                      "name":"android",
+                      "type":"Android OS"
+                  }
+              }
+            ]
+        }
+      ]
+
+  },
+  { 
+      "data":{  
+          "name":"Hardware",
+          "type":"Folder"
+      },
+      "children":[  
+        {  
+          "data":{  
+              "name":"CPU",
+              "type":"Folder"
+          },
+            "children":[  
+              {  
+                  "data":{  
+                      "name":"Fan",
+                      "type":"Application"
+                  }
+              },
+              {  
+                  "data":{  
+                      "name":"Light",
+                      "type":"Application"
+                  }
+              },
+              {  
+                  "data":{  
+                      "name":"SMPS",
+                      "type":"Application"
+                  }
+              }
+            ]
+        }
+      ]
+    },
+    { 
+      "data":{  
+          "name":"Software",
+          "type":"Folder"
+      },
+      "children":[  
+        {  
+          "data":{  
+              "name":"OS",
+              "type":"Folder"
+          },
+            "children":[  
+              {  
+                  "data":{  
+                      "name":"Windows",
+                      "type":"Application"
+                  }
+              },
+              {  
+                  "data":{  
+                      "name":"Ios",
+                      "type":"Application"
+                  }
+              },
+              {  
+                  "data":{  
+                      "name":"Linux",
+                      "type":"Application"
+                  }
+              }
+            ]
+        }
+      ]
+    }
+  ],
+
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,29 @@
+
+<div class="page-wrapper">
+    <div class="page-breadcrumb">
+       <div class="row">
+           <div class="col-12 d-flex no-block align-items-center">
+               <h4 class="page-title">Add Attribute</h4>
+               <div class="ml-auto text-right">
+                   <a routerLink="/attributes" class="p-button font-bold">All Attributes</a>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <div class="container">
+       <form [formGroup]="attributeCreateForm">
+           <div class="card flex justify-content-center">
+               <input placeholder="Attribute Name" type="text" pInputText formControlName="name"/>
+           </div>
+           <div class="card flex justify-content-center">
+               <input placeholder="Values" type="text" pInputText formControlName="values"/>
+           </div>
+           
+           <div class="ml-auto text-right">
+               <p-button label="Save" (click)="createAttribute()" ></p-button>
+           </div>
+       </form>
+   </div>
+
+</div>
